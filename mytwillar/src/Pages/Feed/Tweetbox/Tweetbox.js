@@ -26,7 +26,7 @@ const Tweetbox = () => {
     formData.set("image", image);
     axios
       .post(
-        "https://api.imgbb.com/1/upload?key=b0ea2f6cc0f276633b2a8a86d2c43335",
+        "https://api.imgbb.com/1/upload?key=6c568679c1d1d0cf42798f0fcc797f82",
         formData
       )
       .then((res) => {
