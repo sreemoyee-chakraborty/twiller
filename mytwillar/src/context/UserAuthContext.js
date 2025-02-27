@@ -22,7 +22,6 @@ export function UserAuthContextProvider( props ) {
          createUserWithEmailAndPassword(auth, email, password)
          .then((userCredential) => {
             // Signed up 
-            const user = userCredential.user;
             // ...
           })
           .catch((error) => {
