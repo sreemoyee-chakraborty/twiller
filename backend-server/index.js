@@ -2,14 +2,14 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 const express = require("express");
 const cors = require("cors");
 const uri =
-  "";
+  "mongodb+srv://admin:<db_password>@twiller.hkmgi.mongodb.net/?retryWrites=true&w=majority&appName=twiller";
 const port = 5000;
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const client = new MongoClient(uri);
+
 
 async function run() {
   try {
